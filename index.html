@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anime Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link rel="icon" href="https://www.freeiconspng.com/uploads/naruto-icon-22.png">
+</head>
+
+<body>
+    <!--Main Heading-->
+    <div class="heading">
+        <h1>Anime Shows</h1>
+    </div>
+
+    <div class="background">
+        <div class="container">
+
+            <!--Changing Image based on correct answers-->
+            <h2>Press Any Key To Guess This Word!</h2>
+            <div>
+                <img id="image" src="./assets/images/start.gif" width="40%" height="200">
+            </div>
+
+            <!--Current Word Container-->
+            <div>
+                <h3 id="currentword">_ _ _ _ _</h3>
+            </div>
+            <div id="scoreboard">
+                <!--Guesses left Container-->
+                <div class="sidebar">
+                    <h3>GUESSES LEFT:
+                        <span id="guessesremaining"></span>
+                    </h3>
+                </div>
+
+                <!--Wins counter Container-->
+                <div class="sidebar">
+                    <h3>WINS:
+                        <span id="winstracker"></span>
+                    </h3>
+                </div>
+                <!--Loss counter Container-->
+                <div class="sidebar">
+                    <h3>LOSSES:
+                        <span id="losstracker"></span>
+                    </h3>
+                </div>
+
+                <!--Wrong guesses container-->
+                <div class="sidebar">
+                    <h3>LETTERS YOU GUESSED WRONG:
+                        <span id="playerguesses"></span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--AUDIO FILES-->
+    <div>
+        <!--AttackOnTitan-->
+        <audio id="attackontitan">
+            <source src="./assets/audio/???.mp3" type="audio/mp3">
+        </audio>
+        <!--TokyoGhoul-->
+        <audio id="tokyoghoul">
+            <source src="./assets/audio/anime-ost_tokyo-ghoul-opening-01-unravel-by-tk-from-ling-tosite-sigure.mp3"
+                type="audio/mp3">
+        </audio>
+        <!--Bleach-->
+        <audio id="bleach">
+            <source src="./assets/audio/OP12. Miwa - Change.MP3" type="audio/mp3">
+        </audio>
+        <!--Naruto-->
+        <audio id="naruto">
+            <source src="./assets/audio/anime-ost_naruto-shippuden-opening-03-blue-bird-by-ikimono-gakari.mp3" type="audio/mp3">
+        </audio>
+        <!--DragonBallZ-->
+        <audio id="dragonballz">
+            <source src="./assets/audio/anime-ost_dragon-ball-kai-opening-02-kuu-zen-zetsu-go-by-tanimoto-takayoshi.mp3"
+                type="audio/mp3">
+        </audio>
+        <!--Inuyasha-->
+        <audio id="inuyasha">
+            <source src="./assets/audio/???.mp3" type="audio/mp3">
+        </audio>
+        <!--Fairytail-->
+        <audio id="fairytail">
+            <source src="./assets/audio/???.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!--"???" means I have to find an audio file-->
+
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
